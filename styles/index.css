@@ -1,0 +1,123 @@
+/* GENERAL FOR ENTIRE PAGE */
+
+.grid-container {
+    width: 100vh;
+    max-width: 960px;
+    height: 3840px;
+    margin: 0 auto;
+    color: #111111;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(60, 1fr);
+}
+
+img.genesis {
+    max-width: 90px;
+}
+
+a {
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* HEADER */ 
+
+.nav-header {
+    grid-column: 1 / 13;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+
+/* FIRST SECTION */
+
+.first-section {
+    grid-column: 1 / 13;
+    grid-row: 3 / 7;
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 70%;
+}
+
+p.shooting-stars {
+    color: #4A4FF2;
+    font-weight: 700;
+    font-size: 22px;
+    width: 100%;
+}
+
+h1 { 
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+}
+span.product-designer {
+    color: #4A4FF2;
+}
+
+.right {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+img.rectangle {
+    width: 30px;
+}
+
+p.quote {
+    font-size: 18px;
+    font-style: italic;
+    height: 23px;
+    opacity: 0.6;
+}
+/* GALLERY */
+
+.gallery {
+    background-color: gray;
+    grid-column: 1 / 13;
+    grid-row: 8 / 35;
+}
+
+/* SERVICE LIST */
+
+.service-list {
+    background-color: gray;
+    grid-column: 1 / 13;
+    grid-row: 36 / 39;
+}
+
+/* AWARD SECTION */
+
+.awards {
+    background-color: gray;
+    grid-column: 1 / 13;
+    grid-row: 40 / 51;
+}
+
+/* FOOTER */
+
+.nav-foot {
+    background-color: gray;
+    grid-column: 1 / 13;
+    grid-row: 52 / 53;
+}
