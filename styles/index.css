@@ -93,9 +93,35 @@ p.quote {
 /* GALLERY */
 
 .gallery {
-    background-color: gray;
     grid-column: 1 / 13;
-    grid-row: 8 / 35;
+    grid-row: 8 / 33;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column {
+    flex: 25%;
+    max-width: 30%;
+}
+  
+.column img {
+    width: 100%;
+    margin-top: 20px;
+}
+  
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
 }
 
 /* SERVICE LIST */
@@ -103,7 +129,7 @@ p.quote {
 .service-list {
     background-color: gray;
     grid-column: 1 / 13;
-    grid-row: 36 / 39;
+    grid-row: 34 / 39;
 }
 
 /* AWARD SECTION */
