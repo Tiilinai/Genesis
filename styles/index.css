@@ -261,7 +261,7 @@ p.quote {
 
 .nav-foot {
     grid-column: 1 / 13;
-    grid-row: 48 / 49;
+    grid-row: 49 / 50;
     display: flex;
     align-items: center;
 }
